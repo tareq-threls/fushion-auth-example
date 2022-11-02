@@ -1,15 +1,16 @@
 import 'dart:convert';
 import 'dart:developer';
+
 import 'package:flutter/material.dart';
-import 'package:simple_gravatar/simple_gravatar.dart';
-import 'package:http/http.dart' as http;
 import 'package:flutter_appauth/flutter_appauth.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:http/http.dart' as http;
+import 'package:simple_gravatar/simple_gravatar.dart';
 
 final FlutterAppAuth appAuth = FlutterAppAuth();
 const FlutterSecureStorage secureStorage = FlutterSecureStorage();
 
-const String FUSION_AUTH_DOMAIN = '1a5321098cb0.ngrok.io';
+const String FUSION_AUTH_DOMAIN = 'a65f-202-91-40-224.in.ngrok.io';
 const String FUSION_AUTH_CLIENT_ID = '7e3637e8-723a-42d6-9d1d-5cb36128d6f1';
 
 const String FUSION_AUTH_REDIRECT_URI =
@@ -178,7 +179,7 @@ class Login extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        RaisedButton(
+        ElevatedButton(
           onPressed: () async {
             await loginAction();
           },
@@ -218,7 +219,7 @@ class Profile extends StatelessWidget {
         const SizedBox(height: 24),
         Text('Name: $name'),
         const SizedBox(height: 48),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () async {
             await logoutAction();
           },

@@ -24,7 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^0.12.1
-  flutter_appauth: ^0.9.1
+  flutter_appauth: ^4.2.1
   flutter_secure_storage: ^3.3.3
   simple_gravatar: ^1.0.5
   cupertino_icons: ^1.0.0
